@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffdef2;
+  background-image: url("https://source.unsplash.com/NF2J9yczO1g/1600x900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #222121;
+}
+
+#main_nav {
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  padding: 3.5vw;
+  transition: all 0.5s;
+}
+
+img {
+  width: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 4.88vh 0;
+}
+
+p {
+  margin: 2.4vh 0;
+  line-height: 1.5;
+}
+
+/**************** Header area **********/
+
+header {
+  min-height: 150vh;
+  text-align: center;
+  background: url("https://source.unsplash.com/gYZw6zF5lGQ/1600x900");
+}
+
+header .container {
+  padding: 2.625rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin-top: 4.88vh;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 3.05vw;
+}
+
+header a {
+  text-decoration: none;
+  color: #f8b739;
+}
+
+/*************** Main area **************/
+
+@media screen and (max-width: 320px) {
+  body {
+    background-color: #f2eadf;
+  }
+}
+
+#herobanner h2 {
+  font-size: 4.68rem;
+  color: #ffdef2;
+  padding-top: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#past,
+#present,
+#future {
+  padding: 1.25rem;
+  min-height: 53.4vh;
+}
+
+#present {
+  background: #f2eadf;
+}
+
+#past,
+#future {
+  background: #ffdef2;
+}
+
+#past img,
+#future img {
+  float: right;
+  margin-left: 6.1vh;
+  border: 3px solid black;
+}
+
+#present img {
+  float: left;
+  margin-right: 6.1vw;
+  border: 3px solid black;
+}
+
+.box {
+  background-color: #ffdef2;
+  width: 200px;
+  margin: 1rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+footer {
+  padding: 4.58vh 0 1.53vh 0;
+  background-color: #f2eadf;
+  color: #222121;
+  font-size: 0.75rem;
+}
+
+.footercontainer input {
+  text-align: left;
+  display: block;
+}
+
+#pfooter {
+  text-align: center;
+}

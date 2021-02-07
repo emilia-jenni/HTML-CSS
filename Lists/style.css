@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(241, 199, 213);
+  color: MediumVioletRed;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  background-color: HotPink;
+  list-style-type: circle;
+}
