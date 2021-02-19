@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #222121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+a:first-child {
+  color: black;
+  text-decoration: none;
+}
+
+/*a:visited {
+  color: red;
+  text-decoration: underline;
+}*/
+
+a:focus {
+  color: green;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  background-color: orchid;
+}
+
+/*li:first-child {
+  background-color: hotpink;
+}
+
+li:last-child {
+  background-color: khaki;
+}
+/*the second*/
+/*li:nth-child(2) {
+  background-color: lightblue;
+}
+/*every even*/
+/*li:nth-child(even) {
+  background-color: violet;
+}
+/*every nth, this every 3rd line*/
+/*li:nth-child(3n) {
+  background-color: lightsalmon;
+}
+/*don't touch anything until (fourth) and after that every third*/
+li:nth-child(3n + 4) {
+  background-color: lightgrey;
+}
+
+#herobanner {
+  height: 50vh;
+  background: url("https://source.unsplash.com/oRbhlkuAYUw/1600x900") no-repeat
+    fixed center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#herobanner::after {
+  content: "";
+  background-color: rgba(72, 209, 205, 0.137);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#herobanner h3 {
+  z-index: 1;
+  color: hotpink;
+}
+
+section h3::first-letter {
+  z-index: 1;
+  color: lightseagreen;
+  font-size: 5rem;
+}
+
+#boxes {
+  background-color: lavender;
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: magenta;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.box:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.box:nth-child(6) {
+  position: sticky;
+  top: 500px;
+}
+/*section h2::before {
+  content: "Note!";
+  background-color: goldenrod;
+  display: block;
+  height: 100px;
+  width: 30px;
+}
+section h2::after {
+  content: "Thank you";
+}*/

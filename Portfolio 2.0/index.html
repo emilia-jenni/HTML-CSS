@@ -3,79 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki"
+    />
+    <meta name="author" content="Emilia Vuorenmaa" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,600&family=Redressed&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Emilia's Portfolio</title>
   </head>
   <body>
     <header>
-      <section id="main_nav" style="background: transparent; padding: 42px">
-        <section class="logo">
-          <img src="logodark.svg" alt="Logo Dark" />
-        </section>
-        <nav>
-          <ul>
-            <li><a href="#past">Past</a></li>
-            <li><a href="#present">Present</a></li>
-            <li><a href="#future">Future</a></li>
-            <li><a href="#contactme">Contact me</a></li>
-          </ul>
-        </nav>
-      </section>
+      <div class="container">
+        <div class="main_nav" style="background: transparent; padding: 42px">
+          <div class="logo">
+            <img class="logo" src="logodark.svg" alt="Logo Dark" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#footer">Contact Me</a></li>
+              <li>
+                <a href="facebook"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="instagram"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <section id="herobanner">
         <h2>welcome to my portfolio</h2>
       </section>
     </header>
     <main>
-      <section id="past">
-        <h2>Past</h2>
-        <div class="box">
-          <img
-            src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
-            alt="telescope"
-          />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-            quaerat minima dolor quo culpa fugit eligendi illo iste corrupti sit
-            animi, suscipit laudantium nostrum fuga.
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="box">
-          <img
-            src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
-            alt="telescope"
-          />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-            quaerat minima dolor quo culpa fugit eligendi illo iste corrupti sit
-            animi, suscipit laudantium nostrum fuga.
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="box">
-          <img
-            src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
-            alt="telescope"
-          />
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-            quaerat minima dolor quo culpa fugit eligendi illo iste corrupti sit
-            animi, suscipit laudantium nostrum fuga.
-          </p>
-          <a href="#">Read More</a>
+      <section id="work">
+        <div class="container">
+          <h2>Work</h2>
+          <div class="work-boxes">
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
+                alt="telescope"
+              />
+              <h3>Lorem, ipsum dolor.</h3>
+              <a href="#">Read More</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
+                alt="telescope"
+              />
+              <h3>Lorem, ipsum dolor.</h3>
+              <a href="#">Read More</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/4bY-VkQ0UZQ/1600x900"
+                alt="telescope"
+              />
+              <h3>Lorem, ipsum dolor.</h3>
+              <a href="#">Read More</a>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="present">
-        <section class="container">
-          <h2>Present</h2>
+      <section id="experience">
+        <div class="container">
+          <h2>Experience</h2>
           <img
             src="https://source.unsplash.com/SyYmXSDnJ54/1600x900"
             alt="Student life"
@@ -103,55 +116,71 @@
             laudantium minus exercitationem dolores nam soluta accusantium
             officia esse incidunt, voluptatem voluptas.
           </p>
-        </section>
+        </div>
       </section>
-      <section id="future">
-        <section class="container">
-          <h2>Future</h2>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
           <img
             src="https://source.unsplash.com/e2Dnu5BPhDU/1600x900"
             alt="Coding"
           />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            perspiciatis optio dolorem iure omnis sit dolor explicabo, pariatur
-            nihil consequuntur quisquam quidem quis enim repudiandae nesciunt
-            provident recusandae esse cupiditate consectetur voluptates a quo?
-            Assumenda voluptas porro quaerat nihil at voluptate magnam officia
-            repellendus autem cupiditate quia, molestiae asperiores eligendi
-            vitae dolor aspernatur dicta expedita provident quod illum doloribus
-            quasi! Quod voluptatem magni maiores commodi temporibus aliquid ex
-            iusto. Repellendus, sed officiis placeat reiciendis aut unde
-            blanditiis atque alias? Non nulla quam dolores quibusdam commodi
-            assumenda corporis numquam esse, quia quidem ex quo, cumque eius a
-            delectus aliquam blanditiis consequatur nesciunt neque? Architecto
-            autem possimus placeat, officia quod voluptas nesciunt asperiores
-            fugiat sit impedit! Harum, est atque. Ratione repellat quasi
-            voluptatum consequatur, officiis minus aperiam animi soluta omnis
-            provident esse tempora rem aliquid est adipisci perferendis vero
-            debitis. Magnam aspernatur modi soluta est veritatis fugit error,
-            necessitatibus consequatur vel tenetur porro architecto natus
-            impedit quibusdam laborum labore perspiciatis qui laudantium at
-            maxime praesentium autem! Officiis dignissimos unde ad adipisci
-            culpa optio blanditiis, rem aspernatur, facilis distinctio eligendi
-            voluptas? Corporis, vel!
-          </p>
-        </section>
+          <div class="progress">
+            <i class="fab fa-7x fa-html5"></i>
+            <h3>HTML5</h3>
+            <progress value="30" max="100"></progress>
+          </div>
+          <div class="progress">
+            <i class="fab fa-7x fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <progress value="30" max="100"></progress>
+          </div>
+          <div class="progress">
+            <i class="fab fa-7x fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <progress value="10" max="100"></progress>
+          </div>
+          <div class="progress">
+            <i class="fas fa-7x fa-pen-square"></i>
+            <h3>Writing</h3>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="progress">
+            <i class="fas fa-7x fa-camera-retro"></i>
+            <h3>Photography</h3>
+            <progress value="60" max="100"></progress>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <section class="footercontainer">
+    <footer id="footer">
+      <div class="footercontainer">
+        <div class="logofooter">
+          <img class="logo" src="logodark.svg" alt="Logo Dark" />
+        </div>
+        <h2>Contact Me</h2>
         <form>
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
-          <label for="textarea">Leave a message</label>
-          <input type="textarea" id="textarea" name="textarea" />
-          <button type="submit">Submit</button>
+          <div class="form-group">
+            <label for="name">Your Name: *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-at"></i> Your Email: *</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message"
+              ><i class="fas fa-comment"></i> Leave a Message: *</label
+            >
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <button type="submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
         </form>
-      </section>
-      <p class="pfooter">Copyright © 2021 Emilia V</p>
+        <button id="backToTop">Top<i class="fas fa-arrow-up"></i></button>
+        <p class="copyright">Copyright © 2021 Emilia V</p>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>

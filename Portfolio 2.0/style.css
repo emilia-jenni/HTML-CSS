@@ -10,24 +10,25 @@ html {
 
 body {
   background-color: #ffdef2;
-  background-image: url("https://source.unsplash.com/NF2J9yczO1g/1600x900");
+  background-image: url("https://source.unsplash.com/8P-uQaTd8rw/1600x900");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   color: #222121;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
 }
 
-#main_nav {
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  padding: 3.5vw;
-  transition: all 0.5s;
+input,
+textarea,
+button {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
 }
 
 img {
-  width: 200px;
+  width: 350px;
 }
 
 .container {
@@ -40,12 +41,27 @@ h1 {
 }
 
 h2 {
-  margin: 4.88vh 0;
+  margin: 2rem 0;
 }
 
 p {
-  margin: 2.4vh 0;
+  margin: 1rem 0;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #f8b739;
+}
+
+.bg {
+  background-color: #ffdef2;
+  color: #222121;
+  padding: 1rem;
+}
+
+.bg a {
+  color: #f8b739;
 }
 
 /**************** Header area **********/
@@ -57,7 +73,13 @@ header {
 }
 
 header .container {
-  padding: 2.625rem;
+  padding: 2.5rem;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
@@ -67,7 +89,7 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  padding: 0 3.05vw;
+  padding: 0 1rem;
 }
 
 header a {
@@ -75,73 +97,278 @@ header a {
   color: #f8b739;
 }
 
-/*************** Main area **************/
+header a:hover {
+  text-decoration: underline;
+  color: #ffdef2;
+}
 
-@media screen and (max-width: 320px) {
-  body {
-    background-color: #f2eadf;
-  }
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+#herobanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #herobanner h2 {
+  font-family: "Redressed", cursive;
   font-size: 4.68rem;
   color: #ffdef2;
   padding-top: 60vh;
   justify-content: center;
   align-items: center;
 }
-
-#past,
-#present,
-#future {
-  padding: 1.25rem;
-  min-height: 53.4vh;
+/*************** Main area **************/
+#work,
+#experience,
+#skills {
+  padding: 50px;
+  min-height: 500px;
 }
 
-#present {
+#work .box {
+  background-color: #ffdef2;
+  width: 25%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #aeaeae;
+}
+
+#work .box:hover {
+  box-shadow: 0 0 25px #8a8a8a;
+}
+
+#work .box h3 {
+  margin-bottom: 1rem;
+}
+
+#work .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+#experience {
   background: #f2eadf;
 }
 
-#past,
-#future {
+#skills {
   background: #ffdef2;
 }
 
-#past img,
-#future img {
-  float: right;
-  margin-left: 6.1vh;
-  border: 3px solid black;
+#experience img {
+  float: left;
+  margin-right: 2rem;
 }
 
-#present img {
-  float: left;
-  margin-right: 6.1vw;
-  border: 3px solid black;
+#skills img {
+  float: right;
+  margin-left: 2rem;
 }
 
 .box {
-  background-color: #ffdef2;
-  width: 200px;
-  margin: 1rem;
+  display: inline-block;
+  justify-content: space-between;
 }
 
-.box img {
-  width: 100%;
+progress {
+  -webkit-appearance: progress-bar;
+  width: 150px;
+  color: #222121;
 }
+
+.progress {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #222121;
+  border-radius: 5px;
+  padding: 1rem;
+  display: inline-block;
+  box-shadow: 0 0 10px #585555;
+  background-color: #ffdef2;
+  text-align: center;
+}
+
+.progress:nth-child(even) {
+  background-color: #f2eadf;
+}
+
+/************************Footer Area**********/
 
 footer {
-  padding: 4.58vh 0 1.53vh 0;
+  padding: 8px;
   background-color: #f2eadf;
   color: #222121;
-  font-size: 0.75rem;
-}
-
-.footercontainer input {
-  text-align: left;
-  display: block;
-}
-
-#pfooter {
   text-align: center;
+}
+
+footer .copyright {
+  margin-top: 2rem;
+  font-size: 16px;
+}
+
+/********************Form***********************/
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer form button {
+  background-color: #f8b739;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: #222121;
+  margin-left: 300px;
+  font-size: inherit;
+}
+
+/****************Back to top button*****************/
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #222121;
+  color: #ffdef2;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#backToTop:hover {
+  background-color: #f8b739;
+  color: #222121;
+}
+/****************Tablet support*****************/
+
+@media (max-width: 899px) {
+  #work {
+    display: block;
+  }
+  #work img {
+    width: 100%;
+  }
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea,
+  footer form button {
+    width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/**************** Mobile support ****************/
+
+@media (max-width: 576px) {
+  .main_nav {
+    display: block;
+  }
+
+  header nav ul {
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    padding: 1rem;
+  }
+
+  #herobanner h2 {
+    font-size: 2rem;
+    color: #ffdef2;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  #work .box h3 {
+    margin-bottom: 11rem;
+  }
+
+  #work,
+  #experience,
+  #skills {
+    padding: 1rem;
+  }
+  #work .work-boxes {
+    display: block;
+  }
+  #work .box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #experience img,
+  #skills img {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  footer form .form-group {
+    display: block;
+  }
+
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #222121;
+    color: #ffdef2;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1rem;
+  }
+
+  #myBtn:hover {
+    background-color: #f8b739;
+    color: #222121;
+  }
 }
