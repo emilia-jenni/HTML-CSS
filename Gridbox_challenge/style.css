@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.box {
+  min-height: 100px;
+  margin: 10px;
+}
+
+.navi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  gap: 5px 5px;
+  grid-template-areas: "ST ST ST Nav1 Nav2 Nav3";
+}
+
+.ST {
+  background-color: aqua;
+  grid-area: ST;
+}
+
+.NAV1 {
+  grid-area: NAV1;
+}
+
+.NAV2 {
+  grid-area: NAV2;
+}
+
+.NAV3 {
+  grid-area: NAV3;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: palegreen;
+}
+
+main {
+  height: 100%;
+}
+
+.main-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  gap: 5px 5px;
+  grid-template-areas:
+    "PT PT PT SB"
+    "PM MC MC SB"
+    "PM MC MC ADS"
+    "PM MCI MCI ADS"
+    "PM MCI MCI OS"
+    "PM MCI MCI OS";
+}
+
+.PT {
+  background-color: darkmagenta;
+  grid-area: PT;
+}
+
+.PM {
+  background-color: lightgray;
+  grid-area: PM;
+}
+
+.MC {
+  background-color: lavender;
+  grid-area: MC;
+}
+
+.MCI {
+  background-color: lightgoldenrodyellow;
+  grid-area: MCI;
+}
+
+.SB {
+  background-color: lightgreen;
+  grid-area: SB;
+}
+
+.ADS {
+  background-color: violet;
+  grid-area: ADS;
+}
+
+.OS {
+  background-color: wheat;
+  grid-area: OS;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  gap: 5px 5px;
+  grid-template-areas: "FOOT FOOT FOOT FOOT FOOT FOOT";
+}
+
+.FOOT {
+  background-color: lavender;
+  grid-area: FOOT;
+}

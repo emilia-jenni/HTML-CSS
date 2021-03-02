@@ -7,7 +7,7 @@ window.onscroll = function () {
 
 const headerFunction = () => {
   if (
-    document.body.scrollTop > 100 ||
+    document.header.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
     header.classList.add("bg");
@@ -15,6 +15,8 @@ const headerFunction = () => {
     header.classList.remove("bg");
   }
 };
+
+window.addEventListener("scroll", headerFunction);
 
 window.onscroll = function () {
   scrollFunction();
