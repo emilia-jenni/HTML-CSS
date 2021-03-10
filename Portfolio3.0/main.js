@@ -46,7 +46,7 @@ function darkMode() {
 }
 
 var i = 0;
-var txt = "welcome to my portfolio";
+var txt = "i am emilia vuorenmaa";
 var speed = 50;
 
 function typeWriter() {
