@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Portfolio project for Business College Helsinki"
     />
     <meta name="author" content="Emilia Vuorenmaa" />
-    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, JavaScript, Portfolio, school-project"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,600&family=Redressed&display=swap"
@@ -19,9 +23,7 @@
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="icons.css" />
     <link rel="stylesheet" href="style.css" />
-
     <title>Emilia's Portfolio</title>
   </head>
   <body>
@@ -35,12 +37,12 @@
           </div>
           <nav>
             <ul>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="#footer">Contact Me</a></li>
-              <li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./resume.html">Resumé</a></li>
+              <li><a href="index.html#footer">Contact Me</a></li>
                 <a href="facebook"><i></i></a>
               </li>
               <li>
@@ -57,21 +59,19 @@
         </div>
       </div>
       <section id="herobanner">
-        <h2>welcome to my portfolio</h2>
+        <h2 id="bannertxt"></h2>
       </section>
     </header>
     <main>
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2></h2>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2></h2>
-          </div>
-        </div>
+      <div class="container">
+      <div class="loadingheader">Content coming later...</div>
+      <div class="loader">Loading...</div>
+
+      <div class="data-container">
+       <a href="./index.html"><span class="returnbtn"> Frontpage </span></a>
+      </div>
+      <div class="sign">
+        <span class="sign__word">emilia_jenni</span>
       </div>
     </main>
     <footer id="footer">
@@ -95,7 +95,7 @@
           </div>
           <button type="submit">Send Message <i></i></button>
         </form>
-        <button id="backToTop">Top<i></i></button>
+        <button id="backToTop">Top</button>
         <p class="copyright">Copyright © 2021 Emilia V</p>
       </div>
     </footer>

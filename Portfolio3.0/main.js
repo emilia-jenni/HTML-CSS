@@ -39,12 +39,6 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
 var i = 0;
 var txt = "i am emilia vuorenmaa";
 var speed = 50;
