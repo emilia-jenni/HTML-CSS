@@ -1,10 +1,17 @@
-let header = document.querySelector("main_nav");
+let header = document.querySelector(".main_nav");
 let buttonBackToTop = document.getElementById("backToTop");
 let nav = document.querySelector("nav");
 let links = document.querySelectorAll("nav ul li a");
+let typing = document.getElementById("bannertxt");
+let i = 0;
+let txt = "i am emilia vuorenmaa";
+let speed = 50;
+
+typeWriter();
 
 window.onscroll = function () {
   scrollFunction();
+  progressBar();
 };
 
 const scrollFunction = () => {
@@ -27,11 +34,7 @@ const getToTop = () => {
 
 buttonBackToTop.addEventListener("click", getToTop);
 
-window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
+function progressBar() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height =
     document.documentElement.scrollHeight -
@@ -39,13 +42,10 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-var i = 0;
-var txt = "i am emilia vuorenmaa";
-var speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
+    typing.innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -19,7 +20,6 @@
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="icons.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Emilia's Portfolio</title>
@@ -30,7 +30,7 @@
         <div class="container">
           <div class="logo">
             <a href="./index.html"
-              ><img class="logo" src="logodark.svg" alt="Logo Dark"
+              ><img class="logo" src="logofordark.svg" alt="Logo Dark"
             /></a>
           </div>
           <nav>
@@ -40,16 +40,14 @@
               <li><a href="index.html#skills">Skills</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
               <li><a href="./resume.html">Resumé</a></li>
+              <li><a href="./animations.html">Animations</a></li>
               <li><a href="index.html#footer">Contact Me</a></li>
             </ul>
           </nav>
         </div>
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
       </div>
       <section id="herobanner">
-        <h2>welcome to my portfolio</h2>
+        <h2 id="bannertxt"></h2>
       </section>
     </header>
     <main>
@@ -152,12 +150,20 @@
     <footer id="footer">
       <div class="footercontainer">
         <div class="logofooter">
-          <img class="logo" src="logodark.svg" alt="Logo Dark" />
+          <img class="logo" src="logoForLight.svg" alt="Logo Dark" />
         </div>
         <div class="socialmedia">
-          <a href="facebook">F</a>
-          <a href="instagram">I</a>
-          <a href="linkedin">L</a>
+          <ul>
+            <li>
+              <a href="facebook"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
         </div>
         <h2>Contact Me</h2>
         <form>
@@ -166,16 +172,18 @@
             <input type="text" id="name" name="name" required />
           </div>
           <div class="form-group">
-            <label for="email"><i></i> Your Email: *</label>
+            <label for="email"> Your Email: *</label>
             <input type="email" name="email" id="email" required />
           </div>
           <div class="form-group">
-            <label for="message"><i></i> Leave a Message: *</label>
+            <label for="message"> Leave a Message: *</label>
             <textarea name="message" id="message" required></textarea>
           </div>
-          <button type="submit">Send Message <i></i></button>
+          <button type="submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
         </form>
-        <button id="backToTop">Top<i></i></button>
+        <button id="backToTop">Top <i class="fas fa-chevron-up"></i></button>
         <p class="copyright">Copyright © 2021 Emilia V</p>
       </div>
     </footer>

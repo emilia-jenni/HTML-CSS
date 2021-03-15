@@ -10,7 +10,6 @@
   --shadow-light-color: #8a8a8a;
   --shadow-dark-color: #585555;
   --main_nav-color: #000;
-  --animation-btn-color: #fa99d3;
 }
 
 * {
@@ -25,10 +24,10 @@ html {
 
 body {
   background-color: var(--light-color);
-  position: relative;
   color: var(--text-dark-color);
   font-family: var(--main-font);
   font-size: 1.2rem;
+  position: relative;
 }
 
 input,
@@ -61,8 +60,8 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: var(--highlight-color);
+  text-decoration: none;
 }
 
 .bg {
@@ -79,38 +78,38 @@ a {
 
 header {
   min-height: 150vh;
-  text-align: center;
   background: url("https://source.unsplash.com/gYZw6zF5lGQ/1600x900") no-repeat
     fixed center center/cover;
+  text-align: center;
 }
 
 /*Main Nav*/
 
 .main_nav {
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
   display: flex inline-block;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
   background: var(--main_nav-color);
+  z-index: 100;
 }
 
 .main_nav .container {
-  position: relative;
-  padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding: 1rem;
 }
 
 /*Header*/
 
 header nav ul {
+  margin-top: 4vh;
   list-style-type: none;
-  margin-top: 4.88vh;
 }
 
 header nav ul li {
@@ -133,14 +132,14 @@ header nav a {
 
 header nav a:hover {
   color: var(--light-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*Logo*/
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 150px;
 }
 
 /*Progress Bar*/
@@ -154,25 +153,25 @@ header nav a:hover {
 
 .progress-bar {
   height: 5px;
-  background: var(--highlight-color);
   width: 0%;
+  background: var(--highlight-color);
 }
 
 /*Herobanner*/
 
 #herobanner {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #herobanner h2 {
-  text-shadow: 5px 5px 5px pink;
   font-family: var(--fancy-font);
   font-size: 4.5rem;
   color: var(--light-color);
   padding-top: 60vh;
+  text-shadow: 1px 1px 5px pink;
   text-align: center;
 }
 /**************** Main area ****************/
@@ -180,8 +179,8 @@ header nav a:hover {
 #work,
 #experience,
 #skills {
-  padding: 50px;
   min-height: 500px;
+  padding: 50px;
   scroll-margin-top: 5rem;
 }
 
@@ -193,8 +192,8 @@ header nav a:hover {
 }
 
 #work .box {
-  background-color: var(--light-color);
   width: 25%;
+  background-color: var(--light-color);
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 25px var(--shadow-light-color);
@@ -226,36 +225,45 @@ header nav a:hover {
   background-color: var(--light-color2);
 }
 #experience img {
-  float: left;
-  margin-right: 2rem;
   height: 200px;
   width: 300px;
+  float: left;
+  margin-right: 2rem;
 }
 
 /*Skills*/
 
 #skills img {
-  float: right;
-  margin-left: 2rem;
   height: 200px;
   width: 300px;
+  float: right;
+  margin-left: 2rem;
 }
 
 #skills .skills-group {
+  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .skill:nth-child(even) {
-  background-color: #f2eadf;
+  background-color: var(--light-color2);
 }
 
 .skill {
   padding: 1rem;
   box-shadow: 0 0 5px var(--shadow-dark-color);
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square,
+.fa-pencil-alt,
+.fa-camera-retro {
+  color: var(--text-dark-color);
+  font-size: 4rem;
 }
 
 /*Skills Progress*/
@@ -268,18 +276,22 @@ progress[value] {
 
 progress[value]::-webkit-progress-bar {
   background-color: var(--text-dark-color);
+  box-shadow: 0 2px 5px var(--shadow-dark-color) inset;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  box-shadow: 0 2px 5px var(--shadow-dark-color) inset;
 }
 
 progress[value]::-webkit-progress-value {
   background: var(--highlight-color);
-  border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 /****************Gallery****************/
@@ -351,9 +363,9 @@ progress[value]::-webkit-progress-value {
 /****************Resume****************/
 
 .we-headline h1 {
-  text-align: center;
   font-weight: 300;
   color: var(--text-dark-color);
+  text-align: center;
   padding: 30px;
 }
 
@@ -372,13 +384,13 @@ progress[value]::-webkit-progress-value {
 }
 
 .we-container:before {
+  width: 2px;
+  height: 100%;
   content: "";
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -1px;
-  width: 2px;
-  height: 100%;
   background: var(--highlight-color);
   z-index: 99;
 }
@@ -424,6 +436,10 @@ progress[value]::-webkit-progress-value {
   display: block;
   background: var(--text-dark-color);
   transition: 1s ease-in all;
+  -webkit-transition: 1s ease-in all;
+  -moz-transition: 1s ease-in all;
+  -ms-transition: 1s ease-in all;
+  -o-transition: 1s ease-in all;
 }
 
 .timeline-content:hover::after {
@@ -453,30 +469,29 @@ progress[value]::-webkit-progress-value {
 
 /*Loader*/
 
-.loadingheader {
-  text-align: center;
-  font-size: 4rem;
-  font-family: var(--fancy-font);
-  font-weight: 600;
-}
-
 .loader,
 .loader:before,
 .loader:after {
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .loader {
-  color: var(--highlight-color);
+  width: 10em;
+  height: 10em;
   font-size: 11px;
+  color: var(--highlight-color);
   text-indent: -99999em;
   margin: 55px auto;
   position: relative;
-  width: 10em;
-  height: 10em;
   box-shadow: inset 0 0 0 1em;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
-  transform: translateZ(0);
+  -o-transform: translateZ(0);
 }
 .loader:before,
 .loader:after {
@@ -488,43 +503,55 @@ progress[value]::-webkit-progress-value {
   height: 10.2em;
   background: var(--light-color);
   border-radius: 10.2em 0 0 10.2em;
+  -webkit-border-radius: 10.2em 0 0 10.2em;
+  -moz-border-radius: 10.2em 0 0 10.2em;
+  -ms-border-radius: 10.2em 0 0 10.2em;
+  -o-border-radius: 10.2em 0 0 10.2em;
   top: -0.1em;
   left: -0.1em;
-  -webkit-transform-origin: 5.1em 5.1em;
   transform-origin: 5.1em 5.1em;
-  -webkit-animation: load2 2s infinite ease 1.5s;
+  -webkit-transform-origin: 5.1em 5.1em;
   animation: load2 2s infinite ease 1.5s;
+  -webkit-animation: load2 2s infinite ease 1.5s;
 }
 .loader:after {
   width: 5.2em;
   height: 10.2em;
   background: var(--light-color);
   border-radius: 0 10.2em 10.2em 0;
+  -webkit-border-radius: 0 10.2em 10.2em 0;
+  -moz-border-radius: 0 10.2em 10.2em 0;
+  -ms-border-radius: 0 10.2em 10.2em 0;
+  -o-border-radius: 0 10.2em 10.2em 0;
   top: -0.1em;
   left: 4.9em;
-  -webkit-transform-origin: 0.1em 5.1em;
   transform-origin: 0.1em 5.1em;
-  -webkit-animation: load2 2s infinite ease;
+  -webkit-transform-origin: 0.1em 5.1em;
   animation: load2 2s infinite ease;
+  -webkit-animation: load2 2s infinite ease;
 }
 @-webkit-keyframes load2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
+
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 @keyframes load2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -602,23 +629,23 @@ progress[value]::-webkit-progress-value {
   font-size: 5rem;
   font-family: var(--fancy-font);
   text-align: center;
-  color: var(--light-color);
+  color: #fae1b0;
   animation: neon 0.08s ease-in-out infinite alternate;
   -webkit-animation: neon 0.08s ease-in-out infinite alternate;
 }
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 6px rgba(253, 174, 253, 0.92),
-      0 0 30px rgba(253, 174, 253, 0.34), 0 0 12px rgba(248, 70, 219, 0.52),
-      0 0 21px rgba(248, 70, 219, 0.92), 0 0 34px rgba(248, 70, 219, 0.78),
-      0 0 54px rgba(248, 70, 219, 0.92);
+    text-shadow: 0 0 6px rgba(253, 202, 101, 0.92),
+      0 0 30px rgba(253, 202, 101, 0.34), 0 0 12px rgba(248, 182, 51, 0.52),
+      0 0 21px rgba(248, 182, 51, 0.92), 0 0 34px rgba(248, 182, 51, 0.78),
+      0 0 54px rgba(248, 182, 51, 0.92);
   }
   to {
-    text-shadow: 0 0 6px rgba(253, 174, 253, 0.98),
-      0 0 30px rgba(253, 174, 253, 0.42), 0 0 12px rgba(248, 70, 219, 0.58),
-      0 0 22px rgba(248, 70, 219, 0.84), 0 0 38px rgba(248, 70, 219, 0.88),
-      0 0 60px #f21ee7;
+    text-shadow: 0 0 6px rgba(253, 202, 101, 0.98),
+      0 0 30px rgba(253, 202, 101, 0.42), 0 0 12px rgba(248, 182, 51, 0.58),
+      0 0 22px rgba(248, 182, 51, 0.84), 0 0 38px rgba(248, 182, 51, 0.88),
+      0 0 60px #f79a0e;
   }
 }
 
@@ -639,7 +666,8 @@ footer .copyright {
 /*Social Media Links*/
 
 .socialmedia {
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -648,18 +676,26 @@ footer .copyright {
   -o-transition: all 0.4s;
 }
 
+.socialmedia ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .socialmedia a {
-  text-align: center;
+  text-decoration: none;
   width: 100%;
 }
 
 .socialmedia a:hover {
-  transform: scale(1.5);
+  font-size: 2rem;
   color: var(--text-dark-color);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-linkedin-in {
+  font-size: 1.5rem;
+  padding: 0 10px 0 10px;
 }
 
 /****************Form****************/
