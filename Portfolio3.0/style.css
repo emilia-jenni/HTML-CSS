@@ -105,6 +105,10 @@ header {
   padding: 1rem;
 }
 
+#mobilebtn {
+  display: none;
+}
+
 /*Header*/
 
 header nav ul {
@@ -777,11 +781,47 @@ footer form button {
 /****************Tablet support****************/
 
 @media (max-width: 899px) {
+  #mobilebtn {
+    display: block;
+    background-color: transparent;
+    color: var(--highlight-color);
+    border: none;
+  }
+  #mobilebtn .material-icons {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 55px;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive ul li a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
   #work {
     display: block;
   }
   #work img {
     width: 100%;
+  }
+
+  .work-boxes {
+    display: inline-block;
   }
   footer form {
     width: 80%;
@@ -813,6 +853,21 @@ footer form button {
   .timeline-block-left {
     float: none;
     direction: ltr;
+  }
+  #backToTop {
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 200px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--text-dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 2rem;
   }
 }
 
@@ -850,7 +905,7 @@ footer form button {
     padding: 1rem;
   }
   #work .work-boxes {
-    display: block;
+    display: inline-block;
   }
   #work .box {
     width: 100%;
@@ -869,7 +924,6 @@ footer form button {
   #backToTop {
     display: none;
     position: fixed;
-    bottom: 100px;
     right: 20px;
     z-index: 99;
     border: none;
@@ -878,7 +932,7 @@ footer form button {
     color: var(--light-color);
     cursor: pointer;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 1rem;
   }
 
