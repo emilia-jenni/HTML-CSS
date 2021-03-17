@@ -276,6 +276,7 @@ progress[value] {
   height: 25px;
   appearance: none;
   background: transparent;
+  padding-top: 10px;
 }
 
 progress[value]::-webkit-progress-bar {
