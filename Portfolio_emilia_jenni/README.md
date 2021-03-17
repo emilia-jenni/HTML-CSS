@@ -11,7 +11,7 @@ JS
 CSS
 
 Setup and usage
-https://public.bc.fi/s2100154/PortfolioFinal/resume.html
+https://public.bc.fi/s2100154/Portfolio_emilia_jenni/
 
 Screenshot:
 
